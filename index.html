@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Social Media App</title>
+</head>
+<body>
+    <div class="background">
+        <h1>Social Media App</h1>
+        <div class="container">
+            <!-- Writing Half -->
+            <div class="left">
+                <form id="form">
+                    <label for="post">Speak your mind!</label>
+                    <br><br>
+                    <textarea name="post" id="input" cols="30" rows="10"></textarea>
+                    <br><br>
+                    <div id="msg"></div>
+                    <br>
+                    <button type="submit">Post</button>
+                </form>
+            </div>  <!-- end of left -->
+
+            <!-- CRUD Half -->
+            <div class="right">
+                <h2>Past Posts</h2>
+                <!-- sample past posts -->
+                <div id="posts">
+                    <div>
+                        <p>Alone in the world...</p>
+                        <span class="options">
+                            <i onclick="editPost(this)" class="fas fa-edit"></i>
+                            <i onclick="deletePost(this)"class="fas fa-trash-alt"></i>
+                        </span>
+                    </div>
+
+                    <div>
+                        <p>Speaking into the ether...</p>
+                        <span class="options">
+                            <i onClick="editPost(this)" class="fas fa-edit"></i>
+                            <i onclick="deletePost(this)" class="fas fa-trash-alt"></i>
+                        </span>
+                    </div>
+                </div>  <!-- end of posts -->
+            </div>  <!-- end of right -->
+
+        </div>  <!-- end of container -->
+    </div>  <!-- end of background -->
+<script src="app.js"></script>    
+</body>
+</html>
